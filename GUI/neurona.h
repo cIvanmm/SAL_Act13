@@ -56,7 +56,9 @@ public:
                 }
             }
         }
-        cout <<endl;
+        cout <<"\n\n";
+        aux =QString("\n\n");
+        cadena +=aux;
         return cadena;
     }
 };
