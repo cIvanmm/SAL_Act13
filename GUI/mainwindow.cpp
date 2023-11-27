@@ -478,27 +478,7 @@ void MainWindow::on_pushButton_recorrido_id_clicked()
         }
         if(f !=0){
             cadena =lista.grafo ->profundidad(neurona);
-            ui ->plainTextEdit_adyacencia ->setPlainText(cadena);
+            ui ->plainTextEdit_adyacencia ->insertPlainText(cadena);
         }
     }
 }
-//insertPlainText(cadena)
-
-//imprimir(lista.grafo);
-
-/*void imprimir(const Grafo& grafo){
-    std::cout << "Lista de Adyacencia:\n";
-
-    for (const auto& par : grafo.listaAdyacencia) {
-        Neurona* nodo = par.first;
-        const std::vector<std::pair<Neurona*, int>>& vecinos = par.second;
-
-        std::cout << "Nodo ID " << nodo ->getnid() << " -> ";
-        for (const auto& vecino : vecinos) {
-            Neurona* nodoVecino = vecino.first;
-            int peso = vecino.second;
-            std::cout << "(ID: " << nodoVecino ->getnid() << ", Peso: " << peso << ") ";
-        }
-        std::cout << "\n";
-    }9
-}*/
